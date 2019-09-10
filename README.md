@@ -3,7 +3,7 @@
 To install the package  
 
 ```
-library(devtools)
-install_github(besnarda/rmiscalb)  
-library(rmiscalb)
+library("devtools")
+install_github("besnarda/rmiscalb")  
+library("rmiscalb")
 ```
