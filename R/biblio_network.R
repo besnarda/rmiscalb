@@ -86,7 +86,7 @@ makeVertices<- function(relations){
 ##'
 ##' @param relations data.frame as created by the makeRelation function
 ##' @param vertices data.frame as created by the makeVertices function
-##' @return a data.frame updated with relation indexes
+##' @return a data.frame similar to relations updated with relation indexes
 ##' @author Alban Besnard [aut]
 ##' @export
 updateRelations <- function(relations,vertices){

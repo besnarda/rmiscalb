@@ -12,7 +12,7 @@ updateRelations(relations, vertices)
 \item{vertices}{data.frame as created by the makeVertices function}
 }
 \value{
-a data.frame updated with relation indexes
+a data.frame similar to relations updated with relation indexes
 }
 \description{
 Adding indexes
