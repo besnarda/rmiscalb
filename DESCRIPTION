@@ -1,6 +1,6 @@
 Package: rmiscalb
 Title: Alban Besnard's R code
-Version: 0.1.0
+Version: 0.1.1
 Authors@R: person("Alban", "Besnard", email = "alban.besnard@hotmail.fr", role = c("aut", "cre"))
 Description: All my professional and personal code
 Depends: R (>= 3.6.1)
