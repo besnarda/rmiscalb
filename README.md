@@ -18,7 +18,7 @@ Feel free to give feedbacks.
 
 ## To modify package
 
-Modify functions into the R folder following good practices: one .R file per thematic, good documentation...
+Modify functions into the R folder following good practices: one .R file per thematic, good documentation...  
 Don't forget to use testthat package to ensure your code is properly tested.
 ```
 testthat::auto_test_package()
