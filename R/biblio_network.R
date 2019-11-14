@@ -23,7 +23,7 @@ extractName <- function( author_list, k){
 ##' Getting relations between authors
 ##'
 ##' Useful to plot a network
-##' From a bibtex object (RefManager), 
+##' From a bibtex object (RefManager),
 ##' @param bibtex a bibtex object containing the bibliography you want to work with
 ##' @return this function will give you a data.frame of relations (one line per relation)
 ##' @author Alban Besnard [aut]
@@ -42,7 +42,7 @@ makeRelations<- function(bibtex){
     for (k in 1:(n-1)){
     	for (l in (k+1):n){
 
-    		
+
       		# on ne s'arrête que si les deux noms sont différents.
       		if (k != l) {
         	a=extractName(author_list,k);b=extractName(author_list,l)
@@ -66,7 +66,7 @@ makeRelations<- function(bibtex){
 ##' Creating groups
 ##'
 ##' Calculating and assigning groups of researchers based on betweeness centrality.
-##'  
+##'
 ##' @param relations data.frame as created by the makeRelation function
 ##' @return a data.frame indicating the frequency of each author and his calculated group
 ##' @author Alban Besnard [aut]
@@ -83,15 +83,15 @@ makeVertices<- function(relations){
 }
 
 ##' Adding indexes
-##'  
+##'
 ##' @param relations data.frame as created by the makeRelation function
 ##' @param vertices data.frame as created by the makeVertices function
-##' @return 
+##' @return a data.frame updated with relation indexes
 ##' @author Alban Besnard [aut]
 ##' @export
-updateRelations<-function(relations,vertices){
+updateRelations <- function(relations,vertices){
   # create indices for each name to fit forceNetwork data format
-  relations$source.index = match(relations$source, vertices$name)-1
-  relations$target.index = match(relations$target, vertices$name)-1
+  relations$source.index = match(relations$source, vertices$name) - 1
+  relations$target.index = match(relations$target, vertices$name) - 1
   return(relations)
 }
