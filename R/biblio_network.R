@@ -1,4 +1,4 @@
-## Contains functions useful to work with bibliogrpahy and make networks.
+## Contains functions useful to work with bibliography and make networks.
 
 ##' Getting author names
 ##'
